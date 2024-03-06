@@ -16,7 +16,7 @@ Download the latest **Rocky 9 Boot ISO** (...-boot.iso) from the mirror list abo
 
 **We will need to create a *USB or optical* installation media if we are installing on physical hardware**
 
-1. Create either a CentOS USB installation key or a CD/DVD installation disc.  Boot your computer from your installation media.
+1. Create either a Rocky USB installation key or a CD/DVD installation disc.  Boot your computer from your installation media.
 
 2. On the way up, check your BIOS to make sure that virtualization is enabled:
 
