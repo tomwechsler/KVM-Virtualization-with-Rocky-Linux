@@ -1,4 +1,4 @@
-# KVM-Virtualization-on-Linux
+# KVM-Virtualization with Rocky Linux
 Everything about KVM-Virtualization with Rocky Linux
 
 ## Content of the sections
