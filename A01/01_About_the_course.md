@@ -7,6 +7,7 @@ In this course, we're going to explore *KVM Virtualization on Linux* from *four*
 2. *Web-based Virtualization* Using **Rocky 9**
   - *Cockpit / Web Console*
 3. *CLI Administration* Using **Rocky 9**
+4. *oVirt* Using **Rocky 9**
 
 
 #### Course Prerequisites
