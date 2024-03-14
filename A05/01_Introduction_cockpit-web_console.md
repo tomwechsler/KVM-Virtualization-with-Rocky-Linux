@@ -38,7 +38,7 @@ In this lesson, we will take a look at Cockpit/Web Console, which is a web appli
 - Upgrade software
 - Keep tabs on performance
 
-**For RHEL distributions, Cockpit is the way forward.  Virtual Machine Manager is deprecated.**
+**For RHEL distributions, Cockpit is the way forward.  Virtual Machine Manager (only for RHEL) is deprecated.**
 
 #### How Does it Work?
 
