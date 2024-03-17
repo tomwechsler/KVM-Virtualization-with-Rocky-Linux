@@ -43,6 +43,22 @@ usermod -a -G libvirt tom
 ```
 10. We need to log out and log back in now to pick up the changes.
 
+11. Let's edit `/etc/libvirt/qemu.conf`
+
+12. vim /etc/libvirt/qemu.conf
+
+13. Replace the following:
+
+`#user = "root"` replace root with your username and remove the comment
+
+`#group = "root"` replace root with the groupname libvirt and remove the comment
+
+> Save and exit the file.
+
+14. Restart the libvirtd service:
+
+`systemctl restart libvirtd`
+
 #### Validate the installation
 
 1. Confirm `libvirtd` is enabled and running:
