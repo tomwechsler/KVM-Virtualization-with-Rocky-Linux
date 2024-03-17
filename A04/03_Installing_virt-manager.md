@@ -49,9 +49,9 @@ usermod -a -G libvirt tom
 
 13. Replace the following:
 
-`#user = "root"` replace root with your username and remove the comment
+`#user = "root"` replace root (or qemu) with your username and remove the comment
 
-`#group = "root"` replace root with the groupname libvirt and remove the comment
+`#group = "root"` replace root (or qemu) with the groupname libvirt and remove the comment
 
 > Save and exit the file
 
