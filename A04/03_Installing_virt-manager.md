@@ -35,7 +35,7 @@ vim /etc/libvirt/libvirtd.conf
 
 `unix_sock_rw_perms = "0770"`
 
-> Save and exit the file.
+> Save and exit the file
 
 9. Now, let's add `tom` to the `libvirt` group:
 ```
@@ -53,11 +53,7 @@ usermod -a -G libvirt tom
 
 `#group = "root"` replace root with the groupname libvirt and remove the comment
 
-> Save and exit the file.
-
-14. Restart the libvirtd service:
-
-`systemctl restart libvirtd`
+> Save and exit the file
 
 #### Validate the installation
 
