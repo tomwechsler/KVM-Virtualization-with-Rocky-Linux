@@ -14,6 +14,9 @@ Cockpit is a web-based management utility that gives users a web interface to ma
 We will need a Rocky 9 Boot ISO for installation
 
 1. Download the latest **Rocky 9 Boot ISO** (...-boot.iso) from the mirror list above.  
+```
+curl --output rock9.iso https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.3-x86_64-boot.iso
+```
 2. Save or copy it to `/tmp` on your system.
 
 #### Log in to Cockpit

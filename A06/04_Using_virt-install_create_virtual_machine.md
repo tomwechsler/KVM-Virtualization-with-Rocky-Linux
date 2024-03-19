@@ -3,7 +3,7 @@ We've looked at two ways we can use `libvirt` to administer virtual machines via
 #### Reference Links
 
 [libvirt: virsh](https://libvirt.org/manpages/virsh.html#synopsis)
-[Rocky 9 Mirror](https://mirror.puzzle.ch/rockylinux/9.3/AppStream/x86_64/os/)
+[Rocky 9 Mirror](https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/)
 
 #### Using `virt-install` to Create a Virtual Machine
 

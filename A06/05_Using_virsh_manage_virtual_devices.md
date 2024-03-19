@@ -48,7 +48,7 @@ Sometimes we need to attach a disk image file to the virtual `cdrom` drive.  We 
     ```
 3. Attach the ISO file:
     ```
-    sudo virsh change-media rocky-9-cockpit-vm sda /tmp/rocky-9.3.1911-x86_64-boot.iso --insert --live
+    sudo virsh change-media rocky-9-cockpit-vm sda /tmp/Rocky-9-latest-x86_64-boot.iso --insert --live
     ```
     This will attach the Rocky 9 Boot ISO.  If your ISO has a different name, substitute it.
 
