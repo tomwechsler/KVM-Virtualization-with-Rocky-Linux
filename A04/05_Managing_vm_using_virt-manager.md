@@ -24,7 +24,12 @@ Our Web Developer has requested a new server for development on a new project.  
 
 Bring the clone up.  Our Web Developer asked us for the NGINX web server on this cloned server.  We're going to install NGINX.
 
-First, though, let's take a snapshot of this cloned server, just in case.
+Change the hostname of the clonend Server to rocky-9-webserver. To do so, run the following command:
+```
+sudo hostnamectl set-hostname rocky-9-webserver
+```
+
+Next, though, let's take a snapshot of this cloned server, just in case.
 
 1. Click on *Manage VM Snapshots*, then in the lower left-hand corner, click on the **+** button.
 
