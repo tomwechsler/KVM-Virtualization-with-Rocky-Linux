@@ -10,7 +10,7 @@ In this lesson, we will take a look at Cockpit/Web Console, which is a web appli
 
 ### Introduction to Cockpit / Web Console
 
-#### What is Cockpit/Web Console?
+#### What is Cockpit?
 
 **From the Cockpit Project website:**
 
