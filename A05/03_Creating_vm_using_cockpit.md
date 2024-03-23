@@ -15,15 +15,17 @@ We will need a Rocky 9 Boot ISO for installation
 
 1. Download the latest **Rocky 9 Boot ISO** (...-boot.iso) from the mirror list above.  
 ```
-curl --output rock9.iso https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.3-x86_64-boot.iso
+curl -L https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.3-x86_64-boot.iso --output rocky9.iso
 ```
 2. Save or copy it to `/tmp` on your system.
-
+```
+cp rocky9.iso /tmp
+```
 #### Log in to Cockpit
 
 Log in to the Cockpit web interface at `http://<YOUR_HOST_IP>:9090`
 
-#### Add the `/home/Virtual_Machines` directory to the Storage Pools
+#### Add the `/vms` directory to the Storage Pools
 
 1. In the upper-right hand corner of the 'Virtual Machines' pane, you will see the link to the **Storage Pools**.  Click on this link.
 
@@ -34,7 +36,7 @@ Log in to the Cockpit web interface at `http://<YOUR_HOST_IP>:9090`
 - *Connection:* QEMU/KVM System connection
 - *Name:* `Virtual_Machines`
 - *Type:* Filesystem Directory
-- *Target Path:* `/home/Virtual_Machines`
+- *Target Path:* `/vms`
 - *Startup:* CHECKED
 
 3. Click **Create**.  You should see your new `Virtual_Machines` storage pool.  Click on the **Virtual Machines** link in the upper left-hand corner of the pane to go back to the *Virtual Machines* pane.
