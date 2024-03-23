@@ -11,6 +11,7 @@ Everything about KVM-Virtualization with Rocky Linux
 | A04 | Create a Rocky Linux environment and virt-manager |
 | A05 | Using the Cockpit Webinterface |
 | A06 | Working with the virsh command line tool |
+| A07 | Using oVirt to manage your entire enterprise virtualization infrastructure |
 
 
 <img src="/README.JPG" alt="oVirt - Open Virtualization Manager">
