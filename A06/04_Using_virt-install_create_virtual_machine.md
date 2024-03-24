@@ -24,7 +24,7 @@ We're going to install using a *serial console* and a *text-based installer*, in
 
 4. When the VM comes back up, log in as `tom`.  Patch the VM:
     ```
-    sudo yum -y update
+    sudo dnf -y update
     ```
 5. When patching is complete, log out of the system.  Use **CTRL**+**]** to exit the `virsh` console.
 
