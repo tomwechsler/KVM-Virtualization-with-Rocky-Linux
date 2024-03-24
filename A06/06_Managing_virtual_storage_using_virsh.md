@@ -21,7 +21,7 @@ We are going to create a new storage pool for the DBA team.
     ```
 2. Let's create a new storage pool for the DBA team:
     ```
-    sudo virsh pool-define-as DBA_Team dir - - - - "/home/DB_Virtual_Machines"
+    sudo virsh pool-define-as DB_Team dir - - - - "/db/dbstorage"
     ```
 3. Let's take a look at our current inventory of storage pools:
     ```
@@ -29,19 +29,19 @@ We are going to create a new storage pool for the DBA team.
     ```
 4. Use `virsh pool-build` to build the storage pool:
     ```
-    sudo virsh pool-build DBA_Team
+    sudo virsh pool-build DB_Team
     ```
-5. Confirm we have what we want in `/home`:
+5. Confirm we have what we want in `/db`:
     ```
-    sudo ls -la /home
+    sudo ls -la /db
     ```
 6. Let's set our new storage pool to autostart:
     ```
-    sudo virsh pool-autostart DBA_Team
+    sudo virsh pool-autostart DB_Team
     ```
 7. We will need to start the storage pool:
     ```
-    sudo virsh pool-start DBA_Team
+    sudo virsh pool-start DB_Team
     ```
 8. Now, let's take a look at our current inventory of storage pools:
 
@@ -49,9 +49,9 @@ We are going to create a new storage pool for the DBA team.
     ```
     sudo virsh pool-list --all
     ```
-10. Get pool information for 'DBA_Team':
+10. Get pool information for 'DB_Team':
     ```
-    sudo virsh pool-info DBA_Team
+    sudo virsh pool-info DB_Team
     ```
 Now the DBA team has a place to keep their VMs and storage volumes.
 
@@ -61,27 +61,27 @@ Next, we will need to create five new storage volumes, attach them to the virtua
 
 1. Use `virsh` to create five 10G volumes, named as follows:
     ```
-    sudo virsh vol-create-as DBA_Team rocky-9-db1.qcow2 10G --format qcow2
+    sudo virsh vol-create-as DB_Team rocky-9-db1.qcow2 10G --format qcow2
     ```
     ```
-    sudo virsh vol-create-as DBA_Team rocky-9-db2.qcow2 10G --format qcow2
+    sudo virsh vol-create-as DB_Team rocky-9-db2.qcow2 10G --format qcow2
     ```
     ```
-    sudo virsh vol-create-as DBA_Team rocky-9-db3.qcow2 10G --format qcow2
+    sudo virsh vol-create-as DB_Team rocky-9-db3.qcow2 10G --format qcow2
     ```
     ```
-    sudo virsh vol-create-as DBA_Team rocky-9-db4.qcow2 10G --format qcow2
+    sudo virsh vol-create-as DB_Team rocky-9-db4.qcow2 10G --format qcow2
     ```
     ```
-    sudo virsh vol-create-as DBA_Team rocky-9-db5.qcow2 10G --format qcow2
+    sudo virsh vol-create-as DB_Team rocky-9-db5.qcow2 10G --format qcow2
     ```
 2. Let's take a look at our new volumes:
     ```
-    sudo virsh vol-list DBA_Team
+    sudo virsh vol-list DB_Team
     ```
 3. Let's take a look at the files backing them:
     ```
-    ls -la /home/DB_Virtual_Machines
+    ls -la /db/dbstorage
     ```
 4. Let's take a look at the list of virtual disk devices on our virtual machine:
     ```
@@ -95,19 +95,19 @@ Next, we will need to create five new storage volumes, attach them to the virtua
     ```
 7. Now, let's attach these volumes to the virtual machine:
     ```
-    sudo virsh attach-disk rocky-9-cli-vm --source /home/DB_Virtual_Machines/rocky-9-db1.qcow2 --target vdb --cache none --driver qemu --subdriver qcow2 --config
+    sudo virsh attach-disk rocky-9-cli-vm --source /db/dbstorage/rocky-9-db1.qcow2 --target vdb --cache none --driver qemu --subdriver qcow2 --config
     ```
     ```
-    sudo virsh attach-disk rocky-9-cli-vm --source /home/DB_Virtual_Machines/rocky-9-db2.qcow2 --target vdc --cache none --driver qemu --subdriver qcow2 --config
+    sudo virsh attach-disk rocky-9-cli-vm --source /db/dbstorage/rocky-9-db2.qcow2 --target vdc --cache none --driver qemu --subdriver qcow2 --config
     ```
     ```
-    sudo virsh attach-disk rocky-9-cli-vm --source /home/DB_Virtual_Machines/rocky-9-db3.qcow2 --target vdd --cache none --driver qemu --subdriver qcow2 --config
+    sudo virsh attach-disk rocky-9-cli-vm --source /db/dbstorage/rocky-9-db3.qcow2 --target vdd --cache none --driver qemu --subdriver qcow2 --config
     ```
     ```
-    sudo virsh attach-disk rocky-9-cli-vm --source /home/DB_Virtual_Machines/rocky-9-db4.qcow2 --target vde --cache none --driver qemu --subdriver qcow2 --config
+    sudo virsh attach-disk rocky-9-cli-vm --source /db/dbstorage/rocky-9-db4.qcow2 --target vde --cache none --driver qemu --subdriver qcow2 --config
     ```
     ```
-    sudo virsh attach-disk rocky-9-cli-vm --source /home/DB_Virtual_Machines/rocky-9-db5.qcow2 --target vdf --cache none --driver qemu --subdriver qcow2 --config
+    sudo virsh attach-disk rocky-9-cli-vm --source /db/dbstorage/rocky-9-db5.qcow2 --target vdf --cache none --driver qemu --subdriver qcow2 --config
     ```
 8. Let's take a look at the list of virtual disk devices on our virtual machine:
     ```
