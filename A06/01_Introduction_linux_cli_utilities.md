@@ -2,7 +2,7 @@ We've looked at two ways we can use `libvirt` to administer virtual machines via
 
 #### Reference Links
 
-[libvirt: virsh](https://libvirt.org/manpages/virsh.html#synopsis)
+[libvirt: virsh](https://libvirt.org/manpages/virsh.html)
 
 ### Introduction to Linux CLI Utilities
 
