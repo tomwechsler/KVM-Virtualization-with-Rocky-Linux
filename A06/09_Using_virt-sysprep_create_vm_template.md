@@ -50,11 +50,11 @@ Now that we have our new database VM, let's take a look at it.
     ```
 3. List the network interfaces:
     ```
-    sudo virsh domiflist rocky-db1-vm
+    sudo virsh domiflist rocky-9-db1-vm
     ```
 4. List the block devices:
     ```
-    sudo virsh domblklist rocky-db1-vm
+    sudo virsh domblklist rocky-9-db1-vm
     ```
 5. Log in to the virtual machine using `virsh console` as `tom`:
     ```
