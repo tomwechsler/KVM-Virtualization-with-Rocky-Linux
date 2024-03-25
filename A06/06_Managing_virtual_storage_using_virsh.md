@@ -9,17 +9,17 @@ We've looked at two ways we can use `libvirt` to administer virtual machines via
 
 The `virsh` command enables us to manipulate storage pools, volumes, and snapshots.
 
-Our DBA team has requested five additional storage volumes for the new CentOS 7 database VM.  We want to create these in a new storage pool so we can manage and track the DBA team's storage resources in one place.  We will also take a snapshot of our virtual machine after we add the storage, in case we need to roll back.
+Our DB team has requested five additional storage volumes for the new CentOS 7 database VM.  We want to create these in a new storage pool so we can manage and track the DB team's storage resources in one place.  We will also take a snapshot of our virtual machine after we add the storage, in case we need to roll back.
 
 #### Managing Storage Pools Using `virsh`
 
-We are going to create a new storage pool for the DBA team.  
+We are going to create a new storage pool for the DB team.  
 
 1. Let's take a look at our current inventory of storage pools:
     ```
     sudo virsh pool-list --all
     ```
-2. Let's create a new storage pool for the DBA team:
+2. Let's create a new storage pool for the DB team:
     ```
     sudo virsh pool-define-as DB_Team dir - - - - "/db/dbstorage"
     ```
@@ -53,7 +53,7 @@ We are going to create a new storage pool for the DBA team.
     ```
     sudo virsh pool-info DB_Team
     ```
-Now the DBA team has a place to keep their VMs and storage volumes.
+Now the DB team has a place to keep their VMs and storage volumes.
 
 #### Managing Volumes Using 'virsh'
 
@@ -130,13 +130,13 @@ Next, we will need to create five new storage volumes, attach them to the virtua
     ```
 12. Use **CTRL** + **]** to exit the `virsh` console.
 
-    The DBA team hasn't decided exactly how they want the storage configured from here, so we're going to leave it as-is for now.
+    The DB team hasn't decided exactly how they want the storage configured from here, so we're going to leave it as-is for now.
 
 We now have the additional database storage configured!
 
 #### Managing Snapshots Using `virsh`
 
-The DBA team has requested that we install `mariadb` before we continue.  We've done a lot of work at this point, so we'd like to take a snapshot before we install `mariadb`, *just in case*.
+The DB team has requested that we install `mariadb` before we continue.  We've done a lot of work at this point, so we'd like to take a snapshot before we install `mariadb`, *just in case*.
 
 1. Let's take a look at the list of snapshots for our virtual machine:
     ```
@@ -164,7 +164,7 @@ The DBA team has requested that we install `mariadb` before we continue.  We've 
     ```
 Fantastic!  We're done here.  Use **CTRL** + **]** to exit the `virsh` console.
 
-Well, until the DBA team sends us an e-mail letting us know that they wanted `postgresql`, not `mariadb`.
+Well, until the DB team sends us an e-mail letting us know that they wanted `postgresql`, not `mariadb`.
 
 Have no fear; we have our snapshot to bail us out!
 
