@@ -9,13 +9,13 @@ We've looked at two ways we can use `libvirt` to administer virtual machines via
 
 The 'virsh' command enables us to manipulate virtual networks and interfaces.
 
-Our DBA team has requested a private virtual network to handle private database traffic.  They would like every new VM to have a connection to this network.
+Our DB team has requested a private virtual network to handle private database traffic.  They would like every new VM to have a connection to this network.
 
 We will create a new network and attach our first virtual machine to it.
 
 #### Creating a Virtual Network Using 'virsh'
 
-Create a new file called `dba_network.xml` with the following contents:
+Create a new file called `db_network.xml` with the following contents:
 ```
 <network>
   <name>private</name>
@@ -32,7 +32,7 @@ Save and exit.
 
 Next, we're going to use `virsh net-define` to create a new virtual network using our network configuration:
 ```
-sudo virsh net-define --file dba_network.xml
+sudo virsh net-define --file db_network.xml
 ```
 Let's check our work:
 ```
@@ -88,7 +88,7 @@ sudo virsh domiflist rocky-9-cli-vm
 ```
 Let's check the operating system for our new interface:
 
-Log in to the virtual machine using `virsh console` as 'cloud_user':
+Log in to the virtual machine using `virsh console` as 'tom':
 ```
 sudo virsh console rocky-9-cli-vm
 ```

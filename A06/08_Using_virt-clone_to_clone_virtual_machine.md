@@ -6,7 +6,7 @@ We've looked at two ways we can use `libvirt` to administer virtual machines via
 
 ### Using 'virt-clone' to Clone a Virtual Machine
 
-In this lesson, we're going to clone our `rocky-9-cli-vm` and patch it so we can turn it into a template to for new CentOS 7 VMs for our DBA team.
+In this lesson, we're going to clone our `rocky-9-cli-vm` and patch it so we can turn it into a template to for new CentOS 7 VMs for our DB team.
 
 #### Clone a virtual machine
 

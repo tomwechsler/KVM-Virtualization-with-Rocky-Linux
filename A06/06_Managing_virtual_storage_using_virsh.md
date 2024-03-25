@@ -9,7 +9,7 @@ We've looked at two ways we can use `libvirt` to administer virtual machines via
 
 The `virsh` command enables us to manipulate storage pools, volumes, and snapshots.
 
-Our DB team has requested five additional storage volumes for the new CentOS 7 database VM.  We want to create these in a new storage pool so we can manage and track the DB team's storage resources in one place.  We will also take a snapshot of our virtual machine after we add the storage, in case we need to roll back.
+Our DB team has requested five additional storage volumes for the new Rocky 9 database VM.  We want to create these in a new storage pool so we can manage and track the DB team's storage resources in one place.  We will also take a snapshot of our virtual machine after we add the storage, in case we need to roll back.
 
 #### Managing Storage Pools Using `virsh`
 
