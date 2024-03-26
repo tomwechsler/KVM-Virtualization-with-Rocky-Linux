@@ -91,7 +91,7 @@ After the system has rebooted, log in as `tom`.  We're going to configure four s
     ```
     sudo pvs
     ```
-6, Next, let's add `/dev/sdc` to a new volume group, 'ovirt':
+6. Next, let's add `/dev/sdc` to a new volume group, 'ovirt':
     ```
     sudo vgcreate ovirt /dev/sdc
     ```
