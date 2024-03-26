@@ -81,7 +81,6 @@ We work for a large retail/e-commerce company that is deploying a new warehouse 
     metadata_expire=6h
     countme=1
     enabled=1
-
     ```
     Save and exit the file.
 
