@@ -81,6 +81,7 @@ We work for a large retail/e-commerce company that is deploying a new warehouse 
     metadata_expire=6h
     countme=1
     enabled=1
+
     ```
     Save and exit the file.
 
@@ -108,7 +109,7 @@ We work for a large retail/e-commerce company that is deploying a new warehouse 
     ```
 7. Install the self-hosted engine setup package:
     ```
-    sudo yum -y install ovirt-hosted-engine-setup
+    sudo dnf -y install ovirt-hosted-engine-setup
     ```
 8. Execute the deployment script:
     ```
