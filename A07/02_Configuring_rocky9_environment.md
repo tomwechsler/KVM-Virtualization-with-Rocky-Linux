@@ -180,10 +180,10 @@ After the system has rebooted, log in as `tom`.  We're going to configure four s
     ```
 6. Add the following lines:
     ```
-    /media/ISO    192.168.10.0/24(rw,sync,no_root_squash,no_all_squash)
-    /media/VM_Store    192.168.10.0/24(rw,sync,no_root_squash,no_all_squash)
-    /media/HE_Store    192.168.10.0/24(rw,sync,no_root_squash,no_all_squash)
-    /media/Export_Store    192.168.10.0/24(rw,sync,no_root_squash,no_all_squash)
+    /media/ISO    192.168.1.0/24(rw,sync,no_root_squash,no_all_squash)
+    /media/VM_Store    192.168.1.0/24(rw,sync,no_root_squash,no_all_squash)
+    /media/HE_Store    192.168.1.0/24(rw,sync,no_root_squash,no_all_squash)
+    /media/Export_Store    192.168.1.0/24(rw,sync,no_root_squash,no_all_squash)
     ```
 7. Save, and exit.
 
