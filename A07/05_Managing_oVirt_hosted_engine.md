@@ -28,7 +28,7 @@ sudo hosted-engine --vm-status
 ```
 This will show us the current status of the hosted engine.
 
-We can shut down, power off (force), or start the hosted engine with the `hosted-engine` command.  This comes in handy if we have an unresponsive VM.  We will take a look at this when we patch the hosted engine.
+We can shut down, power off (force), or start the hosted engine with the `hosted-engine` command.  This comes in handy if we have an unresponsive VM. We will take a look at this when we patch the hosted engine.
 
 #### Patching the Hosted Engine
 
@@ -49,10 +49,16 @@ In order to perform important maintenance, we need to put the hosted engine into
     sudo hosted-engine --console
     ```
 4. Hit **Enter**, then log in as `root` using the password you created when you installed oVirt.
-5. Once you're logged in as `root`, use `dnf` to install updates:
+
+5. Once you're logged in as `root`, use `dnf` to install operating system updates:
     ```
     dnf -y update
     ```
+    On the Engine machine, check if updated packages are available:
+    ```
+    engine-upgrade-check
+    ```
+
 6. When updates are installed, log out and disconnect from the console using `CTRL`-`]`.
 
 7. Let's shut down the hosted engine:
