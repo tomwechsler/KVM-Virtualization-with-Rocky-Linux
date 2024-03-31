@@ -36,7 +36,7 @@ virsh version
 
 Let's check our host and make sure it meets the requirement for virtualization:
 ```
-virt-host-validate
+sudo virt-host-validate
 ```
 
 #### Check Bridged Networking
