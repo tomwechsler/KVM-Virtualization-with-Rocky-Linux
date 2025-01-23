@@ -2,7 +2,7 @@ The Virtual Machine Manager (virt-manager) is a desktop virtual machine manager 
 
 #### Reference Links
 
-[Rocky Mirrors List](https://mirror.puzzle.ch/rockylinux/9.3/isos/x86_64/)
+[Rocky Mirrors List](https://rockylinux.org/de-DE/download)
 
 ### Creating a Virtual Machine Using 'virt-manager'
 
