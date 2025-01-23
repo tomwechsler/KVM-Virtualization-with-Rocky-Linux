@@ -2,14 +2,14 @@ The Virtual Machine Manager (virt-manager) is a desktop virtual machine manager 
 
 #### Reference Links
 
-[Rocky Mirrors List](https://rockylinux.org/de-DE/download)
+[Rocky Linux Downloads](https://rockylinux.org/de-DE/download)
 
 ### Creating a Virtual Machine Using 'virt-manager'
 
 1. The first thing we need to do is download the Rocky 9 Boot ISO for installation:
-    1. Open Firefox, and paste the link for the *Rocky Mirrors List* found above into the URL location and go there.  
-    2. Choose a mirror, then Download the *Boot ISO* (should be about 900M).  
-    3. Save the file.  This will be in the `tom` *Downloads* directory (`/home/tom/Downloads`).
+    1. Open Firefox, and paste the link for the *Rocky Linux Downloads* found above into the URL location and go there.  
+    2. Download the *Boot ISO* (should be about 900M).  
+    3. Save the file. This will be in the `tom` *Downloads* directory (`/home/tom/Downloads`).
 
 2. Next, let's use the ISO to create a new virtual machine:
 
