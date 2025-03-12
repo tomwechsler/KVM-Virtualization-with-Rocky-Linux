@@ -26,7 +26,7 @@ We're going to install using a *serial console* and a *text-based installer*, in
     ```
     sudo dnf -y update
     ```
-5. When patching is complete, log out of the system.  Use **CTRL**+**]** to exit the `virsh` console.
+5. When patching is complete, log out of the system.  Use **CTRL**+**] or (CTRL+5)** to exit the `virsh` console.
 
 #### Check out the New Virtual Machine using 'virsh'
 
@@ -34,9 +34,9 @@ We're going to install using a *serial console* and a *text-based installer*, in
     ```
     sudo virsh list --all
     ```
-- Let's take a look for our new virtual disk in the `Virtual_Machines` storage pool:
+- Let's take a look for our new virtual disk in the `toms-vm` storage pool:
     ```
-    sudo virsh vol-list Virtual_Machines
+    sudo virsh vol-list toms-vm
     ```
 
 #### Check out the new virtual machine using Cockpit
