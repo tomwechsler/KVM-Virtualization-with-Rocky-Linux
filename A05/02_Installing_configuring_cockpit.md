@@ -97,15 +97,15 @@ Create a dedicated directory for our virtual disks:
 
 1. Create the directory:
     ```
-    sudo mkdir /vms
+    sudo mkdir /home/vms
     ```
 2. Set the proper ownership:
     ```
-    sudo chown -R qemu:libvirt /vms
+    sudo chown -R qemu:libvirt /home/vms
     ```
 3. Set the proper permissions:
     ```
-    sudo chmod 0770 /vms
+    sudo chmod 0770 /home/vms
     ```
 4. Confirm we have what we want:
     ```
