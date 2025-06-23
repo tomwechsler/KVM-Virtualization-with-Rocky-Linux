@@ -102,7 +102,7 @@ We work for a large retail/e-commerce company that is deploying a new warehouse 
     ```
 6. Install some additional packages:
     ```
-    dnf install -y \
+    sudo dnf install -y \
     https://kojihub.stream.centos.org/kojifiles/packages/nmstate/2.0.0/2.el9/noarch/nmstate-plugin-ovsdb-2.0.0-2.el9.noarch.rpm \
     https://kojihub.stream.centos.org/kojifiles/packages/nmstate/2.0.0/2.el9/noarch/python3-libnmstate-2.0.0-2.el9.noarch.rpm
     ```
