@@ -133,6 +133,15 @@ After the system has rebooted, log in as `tom`.  We're going to configure four s
     ```
     sudo vi /etc/fstab
     ```
+    Add the following lines:
+    
+    ```
+    /dev/mapper/ovirt-ISO /media/ISO        xfs     defaults        0 0
+    /dev/mapper/ovirt-VM_Store /media/VM_Store      xfs     defaults        0 0
+    /dev/mapper/ovirt-HE_Store /media/HE_Store      xfs     defaults        0 0
+    /dev/mapper/ovirt-Export_Store /media/Export_Store      xfs     defaults        0 0
+    ```
+
 12. Add the entries for the new mount, then save and exit.
 
 13. Now, let's mount our new filesystems:
