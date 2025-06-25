@@ -10,7 +10,7 @@ As part of the preparation of our new CentOS 7 virtual machine template for the 
 
 #### Connecting to the 'virsh' serial console
 
-We used a serial console when we installed CentOS 7.  Let's take a look at how to connect and disconnect from the serial console, in case we need a console connection to our virtual machine.
+We used a serial console when we installed Rocky 9.  Let's take a look at how to connect and disconnect from the serial console, in case we need a console connection to our virtual machine.
 
 ##### Connect to the console:
 
