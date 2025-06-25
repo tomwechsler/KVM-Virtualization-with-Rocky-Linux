@@ -13,7 +13,7 @@ We're going to install using a *serial console* and a *text-based installer*, in
 
 1. Let's launch a Rocky 9 installation using `virt-install`:
     ```
-    sudo virt-install --name=rocky-9-cli-vm --vcpus=2 --memory=4096 --location https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/ --disk pool=toms-vm,size=10,bus=virtio --os-variant=rocky9 --network network='default',model=virtio --extra-args='console=ttyS0,115200n8 serial' --nographics
+    sudo virt-install --name=rocky-9-cli-vm --vcpus=2 --memory=4096 --location https://download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os/ --disk pool=toms-vm,size=60,bus=virtio --os-variant=rocky9 --network network='default',model=virtio --extra-args='console=ttyS0,115200n8 serial' --nographics
     ```
 2. Set the values for `vcpus` and `memory` based on your system's resources.  The ones above are more than adequate for a *Minimal* Rocky 9 installation:
     - When we get to the *VNC* menu, choose 'Use text mode', choice number 2.
